@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueRegular.otf');
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueRegular-Italic.otf');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueThin.otf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueThin-Italic.otf');
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueLight.otf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueLight-Italic.otf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueBook.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueBook-Italic.otf');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueHeavy.otf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueHeavy-Italic.otf');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueBold.otf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'UniNeue';
+  src: url('/fonts/UniNeueBold-Italic.otf');
+  font-weight: 700;
+  font-style: italic;
+}
