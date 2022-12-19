@@ -1,11 +1,9 @@
 import React from 'react';
-import { Select } from 'antd';
-import { InputProps } from 'antd/es/input';
-import { CaretDown } from 'phosphor-react';
+import { CaretDown, Placeholder } from 'phosphor-react';
 import { CaretUp, Check } from 'phosphor-react';
 import { itensProps } from '../../App';
 
-interface inputProps extends InputProps {
+interface selectProps extends React.HTMLProps<HTMLSelectElement> {
   itens: itensProps[];
 }
 
@@ -25,12 +23,12 @@ export const Input = ({ placeholder, itens, ...rest }: inputProps) => {
       optionFilterProp="children"
       suffixIcon={<CaretDown />}
       className="text-zinc-800 border-none"
-      // style={{
-      //   border: 'none',
-      //   width: 'w-8',
-      //   color: '#212121',
-      //   fontFamily: 'UniNeue, sans-serif',
-      // }}
+      style={{
+        border: 'none',
+        width: 'w-8',
+        color: '#212121',
+        fontFamily: 'UniNeue, sans-serif',
+      }}
       onChange={onChange}
       onSearch={onSearch}
       filterOption={(input, option) =>
@@ -40,5 +38,22 @@ export const Input = ({ placeholder, itens, ...rest }: inputProps) => {
         return { label: item.id.toString(), value: item.name };
       })}
     />
+  );
+};
+
+export const Select = ({ label, itens, ...rest }: selectProps) => {
+  return (
+    <>
+      <label htmlFor={label}>{label}</label>
+      <select name={label} {...rest}>
+        {itens.map((item) => {
+          return (
+            <option value={item.id} key={item.id}>
+              {item.name}
+            </option>
+          );
+        })}
+      </select>
+    </>
   );
 };
