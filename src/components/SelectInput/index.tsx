@@ -37,13 +37,13 @@ export const SelectInput = ({
       setYear(value);
       getMakes(setError, +e.target.value);
     } else if (label.toLowerCase() == 'make') {
+      setMake(value);
       console.log(selectedYear, value, 'make');
       getModels(setError, selectedYear, value);
     } else if (label.toLowerCase() == 'model') {
       setModel(value);
       console.log(value, 'model');
       getBulbs(setError, value);
-      console.log(JSON.stringify(bulbs), 'comp');
     }
   }
   return (
