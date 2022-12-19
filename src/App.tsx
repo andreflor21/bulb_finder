@@ -2,23 +2,33 @@ import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import './styles/global.css';
 import logo from './assets/logo_haizer.png';
-import { Input } from './components/Input';
-import axios from 'axios';
+import { Input, Select as sel } from './components/Input';
+import { SelectYear, SelectMake, SelectModel } from './components/Select';
+import { SelectInput } from './components/SelectInput';
+import { useServices } from './providers/services';
 import api from '../src/services/api';
 
-export interface itensProps {
-  id: number;
-  name: string;
-}
-
 function App() {
-  const [years, setYears] = useState<itensProps[]>([]);
+  const {
+    getYears,
+    getMakes,
+    getModels,
+    getBulbs,
+    years,
+    makes,
+    models,
+    bulbs,
+    selectedYear,
+    setYear,
+    selectedMake,
+    setMake,
+    selectedModel,
+    setModel,
+  } = useServices();
+  const [error, setError] = useState<boolean>(false);
   useEffect(() => {
-    api
-      .get('year')
-      .then((res) => setYears(res.data))
-      .catch((e) => console.log(e));
-  }, []);
+    getYears(setError);
+  }, [selectedYear]);
 
   return (
     <>
@@ -61,9 +71,24 @@ function App() {
           <h1 className="text-zinc-800 tracking-wider font-bold text-[28px] mt-3 mx-4">
             Bulb Finder
           </h1>
-          <div>
-            <Input label="Year" placeholder="year" itens={years} />
+          <div className="flex">
+            <SelectInput
+              label="Year"
+              placeholder="Select a year"
+              options={years}
+            />
+            <SelectInput
+              label="Make"
+              placeholder="Select a make"
+              options={makes}
+            />
+            <SelectInput
+              label="Model"
+              placeholder="Select a model"
+              options={models}
+            />
           </div>
+          {bulbs.length > 0}
         </div>
       </div>
     </>
