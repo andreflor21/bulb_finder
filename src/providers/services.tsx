@@ -16,6 +16,17 @@ export interface ServiceData {
   id?: number;
   name?: number | string;
 }
+export interface BulbsData {
+  id?: number;
+  bulb?: string;
+  part_id?: number;
+  part?: string;
+  model?: string;
+  year?: number;
+  model_id?: number;
+  make_id?: number;
+  make?: string;
+}
 interface ServicesProviderData {
   getYears: (setError: Dispatch<SetStateAction<boolean>>) => void;
   getMakes: (
@@ -34,7 +45,7 @@ interface ServicesProviderData {
   years: ServiceData[];
   makes: ServiceData[];
   models: ServiceData[];
-  bulbs: ServiceData[];
+  bulbs: BulbsData[];
   selectedYear: number;
   selectedMake: number;
   selectedModel: number;
@@ -51,7 +62,7 @@ export const ServicesProvider = ({ children }: ServicesProviderProps) => {
   const [years, setYears] = useState<ServiceData[]>([]);
   const [makes, setMakes] = useState<ServiceData[]>([]);
   const [models, setModels] = useState<ServiceData[]>([]);
-  const [bulbs, setBulbs] = useState<ServiceData[]>([]);
+  const [bulbs, setBulbs] = useState<BulbsData[]>([]);
   const [selectedYear, setYear] = useState<number>(0);
   const [selectedMake, setMake] = useState<number>(0);
   const [selectedModel, setModel] = useState<number>(0);
@@ -98,7 +109,7 @@ export const ServicesProvider = ({ children }: ServicesProviderProps) => {
       return setError(true);
     }
     api
-      .get<ServiceData[]>(`bulbs?model=${model}`)
+      .get<BulbsData[]>(`bulbs?model=${model}`)
       .then((res) => {
         setBulbs(res.data);
         console.log(res.data, 'provider');
