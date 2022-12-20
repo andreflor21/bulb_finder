@@ -60,7 +60,7 @@ function App() {
             className="tracking-[3.5px] font-bold text-base text-zinc-800 hover:text-orange-500 hover:underline"
           >
             Home &gt;
-          </a>{' '}
+          </a>
           <a
             href="https://www.haizerusa.com/haizer-bulb-finder"
             className="tracking-[3.5px] font-bold text-base text-zinc-800 hover:text-orange-500 hover:underline"
@@ -88,7 +88,33 @@ function App() {
               options={models}
             />
           </div>
-          {bulbs.length > 0}
+          {bulbs.length > 0 && (
+            <div className="mt-10 ml-10">
+              <h2 className="text-3xl text-zinc-900">
+                {`${bulbs[0].year} ${bulbs[0].make} ${bulbs[0].model}`}
+              </h2>
+
+              <div className=" w-[90%] h-[2px] bg-orange-500 mt-2" />
+              {bulbs.map((bulb) => (
+                <>
+                  <div
+                    key={`${bulb.model_id}_${bulb.id}`}
+                    className="flex mt-6"
+                  >
+                    <h4 className="text-zinc-900 text-xl font-semibold ">
+                      {bulb.part}
+                    </h4>
+                    <span className="ml-11 text-zinc-900 text-xl font-light">
+                      {bulb.bulb}
+                    </span>
+                  </div>
+                  <span className="text-zinc-900 font-normal italic text-base">
+                    Available in
+                  </span>
+                </>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </>

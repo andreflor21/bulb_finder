@@ -57,7 +57,7 @@ export const SelectInput = ({
           handleOnChange(e);
           setSelected(e.target.value);
         }}
-        className="relative w-52 mx-12 mt-1 cursor-default rounded-md border-none bg-none py-2 pl-3 pr-10 text-left focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:text-sm"
+        className="w-52 mx-12 mt-1 cursor-default rounded-md appearance-none border-none bg-zinc-100 py-2 pl-3 pr-10 text-left duration-300 focus:border-orange-500 focus:outline-none focus:ring-1 focus:ring-orange-500 sm:text-sm"
       >
         {selected == '' && (
           <option disabled value={''}>
@@ -68,7 +68,7 @@ export const SelectInput = ({
           <option
             key={opt.id}
             value={opt.id}
-            className="absolute z-10 mt-1 max-h-56 w-52 mx-16 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hover:bg-orange-500 hover:text-white sm:text-sm"
+            className="bg-zinc-100 border-none hover:selection:bg-orange-500"
           >
             {opt.name}
           </option>
