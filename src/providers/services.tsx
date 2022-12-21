@@ -26,6 +26,10 @@ export interface BulbsData {
   model_id?: number;
   make_id?: number;
   make?: string;
+  img_m_series?: string;
+  url_m_series?: string;
+  img_platinum?: string;
+  url_platinum?: string;
 }
 interface ServicesProviderData {
   getYears: (setError: Dispatch<SetStateAction<boolean>>) => void;
