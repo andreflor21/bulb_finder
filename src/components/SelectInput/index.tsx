@@ -47,7 +47,7 @@ export const SelectInput = ({
     }
   }
   return (
-    <div>
+    <div className="w-fit">
       <label className="mt-[72px] mx-12 block text-2xl font-normal text-zinc-900">
         {label}
       </label>
