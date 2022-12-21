@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  background-color: rgb(245, 245, 245);
+  min-width: 100vw;
+  min-height: 100vh;
+}
 @font-face {
   font-family: 'UniNeue';
   src: url('/fonts/UniNeueRegular.otf');
@@ -24,23 +29,23 @@
 }
 @font-face {
   font-family: 'UniNeue';
-  src: url('/fonts/UniNeueLight.otf');
+  src: url('/fonts/UniNeueExtraLight.otf');
   font-weight: 200;
 }
 @font-face {
   font-family: 'UniNeue';
-  src: url('/fonts/UniNeueLight-Italic.otf');
+  src: url('/fonts/UniNeueExtraLight-Italic.otf');
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: 'UniNeue';
-  src: url('/fonts/UniNeueBook.otf');
+  src: url('/fonts/UniNeueLight.otf');
   font-weight: 300;
 }
 @font-face {
   font-family: 'UniNeue';
-  src: url('/fonts/UniNeueBook-Italic.otf');
+  src: url('/fonts/UniNeueLight-Italic.otf');
   font-weight: 300;
   font-style: italic;
 }
