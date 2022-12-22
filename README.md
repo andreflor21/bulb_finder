@@ -28,12 +28,12 @@ This project is used by the following companies:
 
 | Color      | Hexadecimal                                                      |
 | ---------- | ---------------------------------------------------------------- |
-| zinc-100   | ![#F5F5F5](https://via.placeholder.com/10/f5f5f5?text=+) #f5f5f5 |
-| zinc-300   | ![#d4d4d8](https://via.placeholder.com/10/d4d4d8?text=+) #d4d4d8 |
-| zinx-800   | ![#212121](https://via.placeholder.com/10/212121?text=+) #212121 |
-| orange-500 | ![#FF8800](https://via.placeholder.com/10/ff8800?text=+) #ff8800 |
-| white      | ![#FFF](https://via.placeholder.com/10/fff?text=+) #ffffff       |
-| black      | ![#000](https://via.placeholder.com/10/000?text=+) #000000       |
+| zinc-100   | ![#F5F5F5](https://placehold.co/15x15/F5F5F5/F5F5F5.png) #f5f5f5 |
+| zinc-300   | ![#d4d4d8](https://placehold.co/15x15/d4d4d8/d4d4d8.png) #d4d4d8 |
+| zinx-800   | ![#212121](https://placehold.co/15x15/212121/212121.png) #212121 |
+| orange-500 | ![#FF8800](https://placehold.co/15x15/ff8800/ff8800.png) #ff8800 |
+| white      | ![#FFF](https://placehold.co/15x15/ffffff/ffffff.png) #ffffff    |
+| black      | ![#000](https://placehold.co/15x15/000000/000000.png) #000000    |
 
 ## Stack
 
