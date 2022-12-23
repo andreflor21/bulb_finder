@@ -13,18 +13,18 @@ interface ServicesProviderProps {
   children: ReactNode;
 }
 export interface ServiceData {
-  id?: number;
+  id: number | string;
   name?: number | string;
 }
 export interface BulbsData {
-  id?: number;
+  id?: number | string;
   bulb?: string;
-  part_id?: number;
+  part_id?: number | string;
   part?: string;
   model?: string;
-  year?: number;
-  model_id?: number;
-  make_id?: number;
+  year?: number | string;
+  model_id?: number | string;
+  make_id?: number | string;
   make?: string;
   img_m_series?: string;
   url_m_series?: string;
@@ -35,27 +35,27 @@ interface ServicesProviderData {
   getYears: (setError: Dispatch<SetStateAction<boolean>>) => void;
   getMakes: (
     setError: Dispatch<SetStateAction<boolean>>,
-    year?: number
+    year?: number | string
   ) => void;
   getModels: (
     setError: Dispatch<SetStateAction<boolean>>,
-    year?: number,
-    make?: number
+    year?: number | string,
+    make?: number | string
   ) => void;
   getBulbs: (
     setError: Dispatch<SetStateAction<boolean>>,
-    model?: number
+    model?: number | string
   ) => void;
   years: ServiceData[];
   makes: ServiceData[];
   models: ServiceData[];
   bulbs: BulbsData[];
-  selectedYear: number;
-  selectedMake: number;
-  selectedModel: number;
-  setYear: Dispatch<SetStateAction<number>>;
-  setMake: Dispatch<SetStateAction<number>>;
-  setModel: Dispatch<SetStateAction<number>>;
+  selectedYear: number | string;
+  selectedMake: number | string;
+  selectedModel: number | string;
+  setYear: Dispatch<SetStateAction<number | string>>;
+  setMake: Dispatch<SetStateAction<number | string>>;
+  setModel: Dispatch<SetStateAction<number | string>>;
 }
 
 export const ServicesContext = createContext<ServicesProviderData>(
@@ -67,9 +67,9 @@ export const ServicesProvider = ({ children }: ServicesProviderProps) => {
   const [makes, setMakes] = useState<ServiceData[]>([]);
   const [models, setModels] = useState<ServiceData[]>([]);
   const [bulbs, setBulbs] = useState<BulbsData[]>([]);
-  const [selectedYear, setYear] = useState<number>(0);
-  const [selectedMake, setMake] = useState<number>(0);
-  const [selectedModel, setModel] = useState<number>(0);
+  const [selectedYear, setYear] = useState<number | string>(0);
+  const [selectedMake, setMake] = useState<number | string>(0);
+  const [selectedModel, setModel] = useState<number | string>(0);
 
   const getYears = (setError: Dispatch<SetStateAction<boolean>>) => {
     api
@@ -80,7 +80,7 @@ export const ServicesProvider = ({ children }: ServicesProviderProps) => {
 
   const getMakes = (
     setError: Dispatch<SetStateAction<boolean>>,
-    year: number = 0
+    year: number | string = 0
   ) => {
     if (year === 0) {
       return setError(true);
@@ -93,8 +93,8 @@ export const ServicesProvider = ({ children }: ServicesProviderProps) => {
 
   const getModels = (
     setError: Dispatch<SetStateAction<boolean>>,
-    year: number = 0,
-    make: number = 0
+    year: number | string = 0,
+    make: number | string = 0
   ) => {
     if (year == 0 || make == 0) {
       return setError(true);
@@ -107,7 +107,7 @@ export const ServicesProvider = ({ children }: ServicesProviderProps) => {
 
   const getBulbs = (
     setError: Dispatch<SetStateAction<boolean>>,
-    model: number = 0
+    model: number | string = 0
   ) => {
     if (model == 0) {
       return setError(true);

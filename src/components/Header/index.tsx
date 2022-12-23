@@ -4,7 +4,7 @@ import logo from '../../assets/logo_haizer.png';
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-around min-w-full h-28 fixed bg-[#fff] z-20">
+    <header className="flex items-center justify-around h-28 fixed bg-[#fff] z-20 w-screen top-0">
       <a href="https://www.haizerusa.com" className="w-1/2">
         <img src={logo} className="w-[300px] self-start" />
       </a>

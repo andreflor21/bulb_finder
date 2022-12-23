@@ -461,6 +461,14 @@
     "@babel/runtime" "^7.13.10"
     "@radix-ui/react-use-layout-effect" "1.0.0"
 
+"@radix-ui/react-label@^2.0.0":
+  "integrity" "sha512-7qCcZ3j2VQspWjy+gKR4W+V/z0XueQjeiZnlPOtsyiP9HaS8bfSU7ECoI3bvvdYntQj7NElW7OAYsYRW4MQvCg=="
+  "resolved" "https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "@babel/runtime" "^7.13.10"
+    "@radix-ui/react-primitive" "1.0.1"
+
 "@radix-ui/react-portal@1.0.1":
   "integrity" "sha512-NY2vUWI5WENgAT1nfC6JS7RU5xRYBfjZVLq0HmgEN1Ezy3rk/UruMV4+Rd0F40PEaFC5SrLS1ixYvcYIQrb4Ig=="
   "resolved" "https://registry.npmjs.org/@radix-ui/react-portal/-/react-portal-1.0.1.tgz"

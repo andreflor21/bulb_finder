@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.7",
+    "@radix-ui/react-label": "^2.0.0",
     "@radix-ui/react-select": "^1.1.2",
     "antd": "^5.0.7",
     "axios": "^1.2.1",
+    "classnames": "^2.3.2",
     "clsx": "^1.2.1",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",

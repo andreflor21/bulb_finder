@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="min-w-full bg-zinc-100 pt-32">
+      <div className="w-full bg-zinc-100 pt-32">
         <div className="w-[75%] min-h-[500px] mx-auto">
           <a
             href="https://www.haizerusa.com"

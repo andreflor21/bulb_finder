@@ -9,7 +9,7 @@ interface modelProps {
 }
 export const Model = ({ bulbs }: modelProps) => {
   return (
-    <div className="min-w-full">
+    <div className="w-full">
       {bulbs.length > 0 && (
         <div className="mt-10 ml-10">
           <h2 className="text-3xl text-zinc-900">

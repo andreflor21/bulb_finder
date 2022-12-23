@@ -11,8 +11,8 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-zinc-900 min-w-full min-h-[350px] flex flex-col justify-start">
-      <div className="p-9">
+    <footer className="bg-zinc-900  min-h-[350px] flex flex-col justify-start">
+      <div className="">
         <div className="flex flex-col gap-y-6 items-center justify-center pt-10">
           <ul className="flex justify-around items-start mx-auto w-[40%] sm:min-w-[60%]">
             <a href="https://www.haizerusa.com/products" target="_blank">
@@ -43,53 +43,56 @@ export const Footer = () => {
             </a>
           </ul>
           <ul className="flex justify-around items-start mx-auto w-[40%] sm:min-w-[60%]">
-            <a href="https://www.haizerusa.com/about-us" target="_blank">
-              <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+            <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              <a href="https://www.haizerusa.com/about-us" target="_blank">
                 ABOUT US
-              </li>
-            </a>
-            <a href="https://www.haizerusa.com/be-a-dealer" target="_blank">
-              <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              </a>
+            </li>
+            <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              <a href="https://www.haizerusa.com/be-a-dealer" target="_blank">
                 BE A DEALER
-              </li>
-            </a>
-            <a
-              href="https://www.haizerusa.com/haizer-merchandising"
-              target="_blank"
-            >
-              <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              </a>
+            </li>
+            <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              <a
+                href="https://www.haizerusa.com/haizer-merchandising"
+                target="_blank"
+              >
                 MERCHANDISING
-              </li>
-            </a>
-            <a href="https://www.haizerusa.com/faq" target="_blank">
-              <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              </a>
+            </li>
+            <li className="text-zinc-100 list-disc hover:list-none hover:text-orange-500 hover:underline">
+              <a href="https://www.haizerusa.com/faq" target="_blank">
                 FAQ
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
         <ul className="flex items-start mx-auto justify-center gap-3 mt-7 w-[40%] sm:min-w-[60%]">
-          <a href="https://www.instagram.com/haizer_usa/" target="_blank">
-            <li className="bg-[#929292] rounded-full w-8 h-8 flex items-center justify-center">
+          <li className="bg-[#929292] rounded-full w-8 h-8 flex items-center justify-center">
+            <a href="https://www.instagram.com/haizer_usa/" target="_blank">
               <InstagramLogo className="fill-zinc-900" size={24} />
-            </li>
-          </a>
-          <a href="https://www.facebook.com/haizerusa/" target="_blank">
-            <li className="bg-[#929292] rounded-full w-8 h-8 flex items-center justify-center">
+            </a>
+          </li>
+          <li className="bg-[#929292] rounded-full w-8 h-8 flex items-center justify-center">
+            <a href="https://www.facebook.com/haizerusa/" target="_blank">
               <FacebookLogo
                 className="fill-zinc-900"
                 size={40}
                 weight="regular"
               />
-            </li>
-          </a>
-          <a href="https://www.youtube.com/watch?v=S7Z2_-jKR9o" target="_blank">
-            <li className="bg-[#929292] rounded-full w-8 h-8 flex items-center justify-center">
+            </a>
+          </li>
+          <li className="bg-[#929292] rounded-full w-8 h-8 flex items-center justify-center">
+            <a
+              href="https://www.youtube.com/watch?v=S7Z2_-jKR9o"
+              target="_blank"
+            >
               <YoutubeLogo className="fill-zinc-900" size={24} weight="fill" />
-            </li>
-          </a>
+            </a>
+          </li>
         </ul>
-        <div className="flex items-start mx-auto justify-center gap-2 mt-5 w-[40%] sm:min-w-[60%]">
+        <div className="flex items-start mx-auto justify-center gap-x-2 mt-5 w-[40%] sm:min-w-[60%]">
           <a href="https://www.haizerusa.com/" target="_top">
             <span className="text-zinc-100">HAIZER USA</span>
           </a>{' '}
@@ -107,7 +110,7 @@ export const Footer = () => {
             <p className="text-zinc-100">PO BOX 228281 MIAMI, FL 33222</p>
           </div>
         </div>
-        <div className="flex items-center justify-center mx-auto mt-8 gap-12">
+        <div className="flex items-center justify-center mx-auto mt-8 gap-x-12">
           <p className="text-zinc-100 text-lg mr-11">2022 | HAIZER USA</p>
           <a href="https://www.haizerusa.com/privacy-policy" target="_blank">
             <p className="text-zinc-600 underline">PRIVACY POLICY</p>
