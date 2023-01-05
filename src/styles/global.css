@@ -4,8 +4,6 @@
 
 #root {
   background-color: rgb(245, 245, 245);
-  min-width: 100vw;
-  min-height: 100vh;
 }
 @font-face {
   font-family: 'UniNeue';
