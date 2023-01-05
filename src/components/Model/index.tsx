@@ -41,7 +41,7 @@ export const Model = ({ bulbs }: modelProps) => {
             <>
               <div className="flex mt-5 mx-4 text-xl align-center gap-2">
                 <h4>
-                  Sorry we don't have any available headlights bulbs for you
+                  Sorry we don't have any available headlight bulbs for you
                 </h4>
                 <SmileySad className="text-2xl self-center" />
               </div>
