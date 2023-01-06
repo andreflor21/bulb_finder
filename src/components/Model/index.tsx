@@ -25,7 +25,7 @@ export const Model = ({ bulbs }: modelProps) => {
                     {bulb.part}
                   </h4>
                   <span className="ml-11 text-zinc-900 text-xl font-light">
-                    {bulb.bulb}
+                    Bulb size: {bulb.bulb}
                   </span>
                 </div>
                 <span className="text-zinc-900 font-extralight mt-2 italic text-base">
