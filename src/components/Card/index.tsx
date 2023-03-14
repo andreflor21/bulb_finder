@@ -9,8 +9,8 @@ export const Card = ({ data, series }: cardProps) => {
   const { bulb, img_m_series, url_m_series, img_platinum, url_platinum } = data;
   return (
     <div className="flex flex-col relative">
-      <div className="flex flex-col w-56 h-64 bg-transparent rounded-lg">
-        <h5 className="relative w-full bg-zinc-300 rounded-t-lg overflow-hidden text-center py-3 z-10 font-semibold tracking-wide">
+      <div className="flex flex-col md:w-56 md:h-64 w-32 h-48 bg-transparent rounded-lg">
+        <h5 className="relative w-full bg-zinc-300 text-xs md:text-base rounded-t-lg overflow-hidden text-center py-3 z-10 font-semibold tracking-wide">
           {series == 'M' ? 'M Series - LED' : 'Platinum Series'} {bulb}
         </h5>
         <img

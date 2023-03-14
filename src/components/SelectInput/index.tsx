@@ -51,7 +51,7 @@ export const SelectDemo = ({ placeholder, label, options }: selectProps) => {
   return (
     <Label
       htmlFor={label}
-      className="relative mt-[72px] mx-12 flex flex-col text-2xl font-normal text-zinc-900"
+      className="relative md:mt-[72px] mt-14 mx-12 flex flex-col text-2xl font-normal text-zinc-900"
     >
       {label}
 
@@ -150,7 +150,7 @@ export const SelectInput = ({
   }
   return (
     <div className="w-fit">
-      <label className="mt-[72px] mx-12 block text-2xl font-normal text-zinc-900">
+      <label className="md:mt-[72px] mt-14 mx-12 block text-2xl font-normal text-zinc-900">
         {label}
       </label>
       <select

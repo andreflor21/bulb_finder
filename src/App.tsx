@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <div className="w-full bg-zinc-100 pt-32">
-        <div className="w-[75%] min-h-[500px] mx-auto">
+        <div className="md:w-3/4 w-4/5 min-h-[500px] mx-auto">
           <a
             href="https://www.haizerusa.com"
             className="tracking-[3.5px] font-bold text-base text-zinc-800 hover:text-orange-500 hover:underline"

@@ -12,7 +12,7 @@ export const Model = ({ bulbs }: modelProps) => {
     <div className="w-full">
       {bulbs.length > 0 && (
         <div className="mt-10 ml-10">
-          <h2 className="text-3xl text-zinc-900">
+          <h2 className="md:text-3xl text-xl text-zinc-900">
             {`${bulbs[0].year} ${bulbs[0].make} ${bulbs[0].model}`}
           </h2>
 
@@ -21,17 +21,17 @@ export const Model = ({ bulbs }: modelProps) => {
             bulbs.map((bulb) => (
               <div key={`${bulb.model_id}_${bulb.id}`}>
                 <div className="flex mt-6">
-                  <h4 className="text-zinc-900 text-xl font-semibold ">
+                  <h4 className="text-zinc-900 text-lg md:text-xl font-semibold ">
                     {bulb.part}
                   </h4>
-                  <span className="ml-11 text-zinc-900 text-xl font-light">
+                  <span className="ml-11 text-zinc-900 text-lg md:text-xl font-light">
                     {bulb.bulb}
                   </span>
                 </div>
                 <span className="text-zinc-900 font-extralight mt-2 italic text-base">
                   Available in
                 </span>
-                <div className="flex gap-10 my-10 mx-8">
+                <div className="flex md:gap-10 gap-3 md:my-10 md:mx-8 my-7 mx-0">
                   <Card data={bulb} series="M" />
                   <Card data={bulb} series="P" />
                 </div>
