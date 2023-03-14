@@ -15,6 +15,12 @@ module.exports = {
       fontFamily: {
         sans: "'UniNeue', 'sans-serif'",
       },
+      screens: {
+        xs: '375px',
+      },
+      backgroundImage: {
+        'menu-gradient': 'linear-gradient(90deg, #E8EDEA 0%, #D1CAC9 100%);',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
