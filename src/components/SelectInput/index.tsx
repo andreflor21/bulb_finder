@@ -31,7 +31,9 @@ export const SelectInput = ({
         selectedModel,
         setModel,
     } = useServices();
-    async function handleOnChange(e: any): Promise<void> {
+    async function handleOnChange(
+        e: React.ChangeEvent<HTMLSelectElement>
+    ): Promise<void> {
         const value = +e.target.value;
         if (label.toLowerCase() == 'year') {
             setYear(value);
@@ -53,7 +55,7 @@ export const SelectInput = ({
             </label>
             <select
                 value={selected}
-                onChange={(e: any) => {
+                onChange={(e) => {
                     handleOnChange(e);
                     setSelected(e.target.value);
                 }}
