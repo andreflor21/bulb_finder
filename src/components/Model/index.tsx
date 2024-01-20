@@ -1,6 +1,6 @@
 import React from 'react';
 import { BulbsData } from '../../providers/services';
-import { SmileySad } from 'phosphor-react';
+import { SmileySad } from '@phosphor-icons/react';
 import { Card } from '../Card';
 // import { Container } from './styles';
 

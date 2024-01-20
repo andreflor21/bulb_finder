@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useServices } from '../../providers/services';
 import { SelectInput } from '../SelectInput';
-import { MagnifyingGlass } from 'phosphor-react';
+import { MagnifyingGlass } from '@phosphor-icons/react';
 // import { Container } from './styles';
 
 export const SelectWrapper = () => {
