@@ -33,7 +33,7 @@ const list: ListItem[] = [
 export const Footer = () => {
     return (
         <footer className="bg-zinc-900 min-w-full min-h-[350px] flex flex-col justify-start">
-            <div className="p-9">
+            <div className="p-4 sm:p-9">
                 <div className="flex flex-col gap-y-6 items-center justify-center pt-10">
                     <List list={list} />
                 </div>
