@@ -8,7 +8,7 @@ export const SelectWrapper = () => {
     const { years, makes, models, getBulbs, selectedModel } = useServices();
     const [error, setError] = useState<boolean>(false);
     return (
-        <div className="flex min-w-full mx-auto flex-col sm:flex-row">
+        <div className="flex min-w-full mx-auto flex-col md:flex-row md:flex-wrap md:items-center md:justify-between">
             <SelectInput
                 label="Year"
                 placeholder="Select a year"

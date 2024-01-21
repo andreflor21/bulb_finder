@@ -34,9 +34,7 @@ export const Footer = () => {
     return (
         <footer className="bg-zinc-900 min-w-full min-h-[350px] flex flex-col justify-start">
             <div className="p-4 sm:p-9">
-                <div className="flex flex-col gap-y-6 items-center justify-center pt-10">
-                    <List list={list} />
-                </div>
+                <List list={list} />
                 <ul className="flex items-start mx-auto justify-center gap-3 mt-7 w-[40%] sm:min-w-[60%]">
                     <a
                         href="https://www.instagram.com/haizer_usa/"
@@ -74,9 +72,11 @@ export const Footer = () => {
                         </li>
                     </a>
                 </ul>
-                <div className="flex items-start mx-auto justify-center gap-2 mt-5 w-[40%] sm:min-w-[60%]">
+                <div className="flex items-start mx-auto justify-center gap-2 mt-5 w-4/5 sm:min-w-4/5">
                     <a href="https://www.haizerusa.com/" target="_top">
-                        <span className="text-zinc-100">HAIZER USA</span>
+                        <span className="text-zinc-100 whitespace-nowrap">
+                            HAIZER USA
+                        </span>
                     </a>{' '}
                     <span className="h-0.5 w-4/5 bg-zinc-100 self-center" />
                 </div>

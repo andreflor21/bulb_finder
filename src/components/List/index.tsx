@@ -12,7 +12,7 @@ interface ListProps {
 
 const List = ({ list }: ListProps) => {
     return (
-        <ul className="flex justify-between items-center content-center flex-wrap w-full mx-auto pl-2">
+        <ul className="pt-10 w-fit grid grid-rows-4 gap-x-10 whitespace-nowrap grid-cols-2 justify-between items-center content-center mx-auto">
             {list.map((item, index) => (
                 <li
                     className="text-zinc-100 flex items-center basis-1/2 w-fit hover:list-none self-start hover:text-orange-500 hover:underline tracking-widest"
