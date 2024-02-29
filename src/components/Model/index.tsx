@@ -11,7 +11,7 @@ export const Model = ({ bulbs }: modelProps) => {
     return (
         <div className="min-w-full">
             {bulbs.length > 0 && (
-                <div className="flex flex-col w-full justify-center items-strech sm:flex-row sm:mt-10 sm:ml-10">
+                <div className="flex flex-col w-full justify-center items-strech mb-6 sm:mt-10 sm:ml-10">
                     <h2 className="w-[90%] text-3xl text-zinc-900">
                         {`${bulbs[0].year} ${bulbs[0].make} ${bulbs[0].model}`}
                     </h2>
